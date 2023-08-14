@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    test rendom = number
+    <button onclick="random()">Enter</button>
+    <!-- <button onclick="re()">Enter</button>
+    <button onclick="sum">Sum</button> -->
+    <h2 id="outp"></h2>
+    <h2 id="ou"></h2>
+    <h2 id="sum"></h2>
+
+    <script>
+        let outpEl=document.getElementById('outp')
+        let ouEl =document.getElementById('ou')
+        let sumEl=document.getElementById('sum')
+        function random(){
+          
+            let counter=0
+            let array1=[]
+            for (let i =0; i<10; i++){
+                counter=Math.floor(Math.random()*100)
+                array1.push(counter)
+                
+            }
+            outpEl.innerHTML=array1
+            let count=0
+            let array2=[]
+        for(let i =0; i<10; i++){
+            count=Math.floor(Math.random()*100)
+            array2.push(count)
+        }
+        ouEl.innerHTML=array2
+
+        let sum=0;
+       let Array3=[]
+       for(let i =0; i<10; i++){
+        
+    
+       }
+       sumEl.innerHTML=Array3
+
+        }
+
+     
+    
+    </script>
+</body>
+</html>
